@@ -1,6 +1,6 @@
 package at.ac.fhcampuswien;
 
-import java.util.Random;
+
 import java.util.Scanner;
 
 public class App {
@@ -88,10 +88,11 @@ public class App {
     }
     public static int randomNumberBetweenOneAndHundred(){
 
-        //return (int) (Math.random() * 100) + 1;
+        return (int) (Math.random() * 100) + 1;
 
-        Random randomNumber = new Random();
-        return randomNumber.nextInt(100);
+        // Test failed on using the Random object
+        //Random randomNumber = new Random();
+        //return randomNumber.nextInt(100);
     }
 
     //Assignment 4
@@ -199,5 +200,6 @@ public class App {
     }
 
     public static void main(String[] args) {
+
     }
 }
